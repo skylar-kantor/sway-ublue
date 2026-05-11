@@ -27,14 +27,17 @@ modules:
         - micro
         - starship
         - niri
+    group-install:
+        - "Fedora Workstation"
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
         # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-        - @kde-desktop
         - code
+    group-remove:
+        - "KDE Plasma Workspaces"
 
   - type: default-flatpaks
     configurations:
